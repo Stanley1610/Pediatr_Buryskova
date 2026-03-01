@@ -969,6 +969,34 @@ footer{
   text-align: right;
   white-space: nowrap;
 }
+    /* ===== Modern Pricing List ===== */
+
+.pricing-list{
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.pricing-item{
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid #edf3fb;
+}
+
+.pricing-name{
+  flex: 1 1 auto;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.pricing-price{
+  flex: 0 0 auto;
+  font-weight: 900;
+  color: var(--primary);
+  white-space: nowrap;
+}
 </style>
 </head>
 <body>
@@ -1446,26 +1474,91 @@ Sestra přítomná od 7:00 každý den – volejte co nejdříve.
 
   <div class="card">
     <p><strong>Ceník lékařských služeb nehrazených z veřejného zdravotního pojištění</strong></p>
-    <p class="section-desc">Nutné se předem telefonicky / prostřednictvím e‑mailu domluvit.</p>
+    <p class="section-desc">Nutné se předem telefonicky / prostřednictvím e-mailu domluvit.</p>
 
-    <table>
-      <tr><td>Lékařský posudek o zdravotní způsobilosti</td><td>100 Kč</td></tr>
-    <tr><td>Lékařský posudek ke vzdělání</td><td>100 Kč</td></tr>
-    <tr><td>Lékařský posudek na řidičský průkaz</td><td>500 Kč</td></tr>
-    <tr><td>Lékařský posudek na zbrojní průkaz</td><td>500 Kč</td></tr>
-    <tr><td>Potvrzení do mateřské školy</td><td>100 Kč</td></tr>
-    <tr><td>Omluvenka do školy na vlastní žádost</td><td>100 Kč</td></tr>
-    <tr><td>Kopie očkovacího průkazu</td><td>300 Kč</td></tr>
-    <tr><td>Výpis ze zdravotní dokumentace</td><td>400 Kč</td></tr>
-    <tr><td>Zpráva pro odškodnění vytrpěné bolesti (pro pojišťovnu)</td><td>400 Kč</td></tr>
-    <tr><td>Aplikace nadstandardního očkování (nehrazené ze zdravotního pojištění)</td><td>300 Kč</td></tr>
-    <tr><td>Aplikace náušnic</td><td>200 Kč</td></tr>
-    <tr><td>Plusoptix – vyšetření zraku (na vlastní žádost)</td><td>600 Kč</td></tr>
-    <tr><td>Kapilární CRP na vlastní žádost</td><td>200 Kč</td></tr>
-    <tr><td>Vyšetření moči na vlastní žádost</td><td>100 Kč</td></tr>
-    <tr><td>StrepTest na vlastní žádost</td><td>250 Kč</td></tr>
-    <tr><td>Antigenní test na covid-19 / chřipku A/B na vlastní žádost</td><td>150 Kč</td></tr>
-    </table>
+    <div class="pricing-list">
+
+      <div class="pricing-item">
+        <div class="pricing-name">Lékařský posudek o zdravotní způsobilosti</div>
+        <div class="pricing-price">100 Kč</div>
+      </div>
+
+      <div class="pricing-item">
+        <div class="pricing-name">Lékařský posudek ke vzdělání</div>
+        <div class="pricing-price">100 Kč</div>
+      </div>
+
+      <div class="pricing-item">
+        <div class="pricing-name">Lékařský posudek na řidičský průkaz</div>
+        <div class="pricing-price">500 Kč</div>
+      </div>
+
+      <div class="pricing-item">
+        <div class="pricing-name">Lékařský posudek na zbrojní průkaz</div>
+        <div class="pricing-price">500 Kč</div>
+      </div>
+
+      <div class="pricing-item">
+        <div class="pricing-name">Potvrzení do mateřské školy</div>
+        <div class="pricing-price">100 Kč</div>
+      </div>
+
+      <div class="pricing-item">
+        <div class="pricing-name">Omluvenka do školy na vlastní žádost</div>
+        <div class="pricing-price">100 Kč</div>
+      </div>
+
+      <div class="pricing-item">
+        <div class="pricing-name">Kopie očkovacího průkazu</div>
+        <div class="pricing-price">300 Kč</div>
+      </div>
+
+      <div class="pricing-item">
+        <div class="pricing-name">Výpis ze zdravotní dokumentace</div>
+        <div class="pricing-price">400 Kč</div>
+      </div>
+
+      <div class="pricing-item">
+        <div class="pricing-name">Zpráva pro odškodnění vytrpěné bolesti (pro pojišťovnu)</div>
+        <div class="pricing-price">400 Kč</div>
+      </div>
+
+      <div class="pricing-item">
+        <div class="pricing-name">Aplikace nadstandardního očkování (nehrazené ze zdravotního pojištění)</div>
+        <div class="pricing-price">300 Kč</div>
+      </div>
+
+      <div class="pricing-item">
+        <div class="pricing-name">Aplikace náušnic</div>
+        <div class="pricing-price">200 Kč</div>
+      </div>
+
+      <div class="pricing-item">
+        <div class="pricing-name">Plusoptix – vyšetření zraku (na vlastní žádost)</div>
+        <div class="pricing-price">600 Kč</div>
+      </div>
+
+      <div class="pricing-item">
+        <div class="pricing-name">Kapilární CRP na vlastní žádost</div>
+        <div class="pricing-price">200 Kč</div>
+      </div>
+
+      <div class="pricing-item">
+        <div class="pricing-name">Vyšetření moči na vlastní žádost</div>
+        <div class="pricing-price">100 Kč</div>
+      </div>
+
+      <div class="pricing-item">
+        <div class="pricing-name">StrepTest na vlastní žádost</div>
+        <div class="pricing-price">250 Kč</div>
+      </div>
+
+      <div class="pricing-item">
+        <div class="pricing-name">Antigenní test na covid-19 / chřipku A/B na vlastní žádost</div>
+        <div class="pricing-price">150 Kč</div>
+      </div>
+
+    </div>
   </div>
 </section>
 
