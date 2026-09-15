@@ -1027,6 +1027,47 @@ footer{
     flex-direction: column;
   }
 }
+    /* ===== UPOZORNĚNÍ NA NOVOU AKTUALITU ===== */
+.home-news-alert {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  margin-bottom: 1.4rem;
+  padding: 0.9rem 1rem;
+
+  border: 1px solid #ffc5ce;
+  border-radius: 16px;
+
+  background: linear-gradient(135deg, #fff5f7, #fff9f0);
+  color: #8e2736;
+
+  font-weight: 900;
+  text-align: left;
+  cursor: pointer;
+
+  box-shadow: 0 8px 24px rgba(232, 74, 95, 0.12);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.home-news-alert:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px rgba(232, 74, 95, 0.18);
+}
+
+.home-news-alert small {
+  display: block;
+  margin-top: 0.15rem;
+  color: #6b7a8a;
+  font-weight: 700;
+}
+
+.home-news-alert-arrow {
+  font-size: 1.4rem;
+  flex: 0 0 auto;
+}
 
 </style>
 
@@ -1082,6 +1123,17 @@ footer{
     <!-- HERO -->
     <section id="home" class="hero tab-section active">
       <div>
+        <section id="home" class="hero tab-section active">
+  <div>
+
+    <button class="home-news-alert" type="button" data-tab="news">
+      <span>
+        🔔 Nová informace v Aktualitách a zástupu
+        <small>Klepněte pro zobrazení.</small>
+      </span>
+      <span class="home-news-alert-arrow">›</span>
+    </button>
+
 <p class="hero-subtitle">
           Vítejte na stránkách ordinace praktického lékaře pro děti a dorost.
         </p>
